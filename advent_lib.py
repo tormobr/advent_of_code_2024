@@ -67,6 +67,9 @@ def print_arr(arr, sep=""):
     for x in arr:
         print(f"{x}{sep}")
 
+def draw_arr(arr):
+    for line in arr:
+        print("".join(c for c in line))
 
 # Draw matrix in terminal
 def draw_matrix(m, mapping={1: WHITE_SQUARE + " ", 0:"  "}, replacing=True):
