@@ -135,7 +135,18 @@ def pretty_print(part_1, part_2, t1=None, t2=None):
     print()
     os.system(f"echo \"{part_1} | {part_2}\" | xclip -sel clip")
 
+# Pretty prints the results
+def pretty_print_parts(part_1, part_2):
+    s = time.time()
+    p1 = part_1()
+    e = time.time()
+    t1 = e - s
 
+    s = time.time()
+    p2 = part_2()
+    e = time.time()
+    t2 = e - s
+    pretty_print(p1, p2, t1, t2)
 
 if __name__ == "__main__":
     print(read_lines("test_input/1.txt", int))

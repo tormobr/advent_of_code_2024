@@ -34,13 +34,4 @@ def get_matches(r):
 
 
 if __name__ == "__main__":
-    s = time.time()
-    p1 = part_1()
-    e = time.time()
-    t1 = e - s
-
-    s = time.time()
-    p2 = part_2()
-    e = time.time()
-    t2 = e - s
-    pretty_print(p1, p2, t1, t2)
+    pretty_print_parts(part_1, part_2)
